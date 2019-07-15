@@ -37,7 +37,7 @@ const useStyles = makeStyles(theme => ({
     root: {
         width: "100%",
         minWidth: 360,
-        backgroundColor: theme.palette.background.paper
+        backgroundColor: "rgba(0,0,0,0)",
     },
     container: {
         display: "flex",
@@ -493,11 +493,11 @@ export const UserInput: React.FC = () => {
             <Input placeholder="URL Here" value={urlInput} onChange={onUrlInputChange}/>
             <Input placeholder="Designer Here" value={designerInput} onChange={onDesignerInputChange}/>
             <Input
-                    type="text"
-                    placeholder="Category Search"
-                    value={catSearch}
-                    onChange={onCatSearchChange}
-                />
+                type="text"
+                placeholder="Category Search"
+                value={catSearch}
+                onChange={onCatSearchChange}
+            />
                 <Typography component="div">
                     <Grid component="label" container alignItems="center" spacing={1}>
                     <Grid item>English</Grid>
