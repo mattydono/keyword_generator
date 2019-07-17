@@ -450,8 +450,6 @@ export const UserInput: React.FC = () => {
             return permutations;
         };
 
-        console.log('SUBCATS', subcats)
-
         const data = subcats.map(arr => {
             const results: Array<Array<string>> = []
            arr.map( subArr => {
